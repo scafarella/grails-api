@@ -1,3 +1,0 @@
---Output from test create of a Lead--
---Output from test update of a Lead--
---Output from test update of a VALID Lead--
