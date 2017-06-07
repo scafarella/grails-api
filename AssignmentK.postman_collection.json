@@ -1,0 +1,205 @@
+{
+	"id": "a030e2ed-8c68-fd1e-99f1-6021193352c8",
+	"name": "AssignmentK",
+	"description": "",
+	"order": [
+		"e1cb45e2-f3f2-eb31-75f8-880ad2bd73ac",
+		"31721889-809a-ef80-bfd8-5b728854e4b5",
+		"4de9eca8-eded-2b3c-da8e-d0ec1c8b9175",
+		"c95b5c36-b7db-d1f3-e861-5fe71dccd883",
+		"1170e2d1-4b7d-6ce2-3885-709a78a55f65",
+		"f463dae7-48e0-5c68-5b0d-ed430b9a5934"
+	],
+	"folders": [],
+	"timestamp": 1496764419114,
+	"owner": "1229175",
+	"public": false,
+	"requests": [
+		{
+			"id": "1170e2d1-4b7d-6ce2-3885-709a78a55f65",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8090/assignmentK/cars?make=Opel&year=2016&model=Astra",
+			"queryParams": [
+				{
+					"key": "make",
+					"value": "Opel",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "year",
+					"value": "2016",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "model",
+					"value": "Astra",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1496764744564,
+			"name": "Search car with submitted parameters",
+			"description": "",
+			"collectionId": "a030e2ed-8c68-fd1e-99f1-6021193352c8",
+			"responses": []
+		},
+		{
+			"id": "31721889-809a-ef80-bfd8-5b728854e4b5",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8090/assignmentK/leads/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "a030e2ed-8c68-fd1e-99f1-6021193352c8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Lead changes status",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1496764532905,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"status\": \"VALID\"\n}"
+		},
+		{
+			"id": "4de9eca8-eded-2b3c-da8e-d0ec1c8b9175",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8090/assignmentK/makes",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1496764762476,
+			"name": "get all make",
+			"description": "Get all Make",
+			"collectionId": "a030e2ed-8c68-fd1e-99f1-6021193352c8",
+			"responses": []
+		},
+		{
+			"id": "c95b5c36-b7db-d1f3-e861-5fe71dccd883",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8090/assignmentK/cars",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "a030e2ed-8c68-fd1e-99f1-6021193352c8",
+			"data": null,
+			"dataMode": "params",
+			"name": "get all cars",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1496764649201,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e1cb45e2-f3f2-eb31-75f8-880ad2bd73ac",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8090/assignmentK/leads",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a030e2ed-8c68-fd1e-99f1-6021193352c8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create a new Lead",
+			"description": "Create a new Lead",
+			"descriptionFormat": "html",
+			"time": 1496764481167,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"car\":{\n\t\t\"carId\": \"501\"\n\t},\n\t\"person\":{\n\t\t\"name\": \"stefano1\",\n\t\t\"surname\": \"cafarella\",\n\t\t\"phone\":\"123123123\"\n\t}\n}"
+		},
+		{
+			"id": "f463dae7-48e0-5c68-5b0d-ed430b9a5934",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8090/assignmentK/suggest?carId=516",
+			"queryParams": [
+				{
+					"key": "carId",
+					"value": "516",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "a030e2ed-8c68-fd1e-99f1-6021193352c8",
+			"data": null,
+			"dataMode": "params",
+			"name": "Suggestion of similar cars",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1496822415275,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

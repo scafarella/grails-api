@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="stefano-K501UXM" name="it.drivek.cars.CarControllerSpec" skipped="0" tests="2" time="1.109" timestamp="2017-06-07T08:31:10">
+  <properties />
+  <testcase classname="it.drivek.cars.CarControllerSpec" name="test get suggestion error for a car" time="1.041" />
+  <testcase classname="it.drivek.cars.CarControllerSpec" name="test get suggestion for a car" time="0.06" />
+  <system-out><![CDATA[--Output from test get suggestion error for a car--
+--Output from test get suggestion for a car--
+]]></system-out>
+  <system-err><![CDATA[--Output from test get suggestion error for a car--
+--Output from test get suggestion for a car--
+]]></system-err>
+</testsuite>
